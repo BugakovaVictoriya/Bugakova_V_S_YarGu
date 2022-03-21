@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="img/icototoro.ico" />
+    <link rel="stylesheet" href="css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -18,11 +19,50 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Studio Gibli API</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container _container">
+          <img class="logo" src="img/logo.png" alt="">
+          <div class="header__menu menu">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li><a href="index.html" class="menu__link">Главная</a></li>
+                <li><a href="people.html" class="menu__link">Люди</a></li>
+                <li><a href="locations.html" class="menu__link">Локации</a></li>
+                <li><a href="species.html" class="menu__link">Сущности</a></li>
+                <li><a href="vehicles.html" class="menu__link">Транспорт</a></li>
+              </ul>
+            </nav>
+         </div>
+        </div>
+      </header>
+      <section class="logo-screen">
+        <div class="logo-screen__body"></div>
+        <div class="logo-screen__footer">
+          <div class="logo-screen__title">Studio Ghibli</div>
+        </div>
+      </section>
+      <section class="fullscreen _film">
+        <h1>Фильмы</h1>
+      </section>
+      <section class="content">
+        <div class="card-list__container _container" id="root">
+          <div class="card-list__card card">
+            <div class="card__title">Заголовок</div>
+            <div class="card__cont">Примерный внешний вид карточки с информацией, окончательный вариант буду подгонять под API контент. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam odio maxime sunt. Incidunt animi repellendus commodi voluptatibus nulla autem itaque unde, repellat ipsam corporis sequi velit, quisquam nihil culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam odio maxime sunt. Incidunt animi repellendus commodi voluptatibus nulla autem itaque unde, repellat ipsam corporis sequi velit, quisquam nihil culpa.</div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container _container">
+          Studio Ghibli API fun made.
+        </div>
+      </footer>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
