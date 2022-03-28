@@ -15,14 +15,14 @@ html, body {
     flex-direction: column;
 }
 
-._container {
+.container {
     max-width: 1200px;
     @media (max-width: 1024px) {
         max-width: 1024px;
     }
 }
 
-.header {
+.navigation-bar {
     background-color: #221815;
     
     &__container {
@@ -91,26 +91,21 @@ html, body {
         font-size: 150px;
         text-align: center;
     }
-}
-
-._film {
-    background: url('../img/rain.jpg') center / cover no-repeat fixed;
-}
-
-._people {
-    background: url('../img/people.jpg') center / cover no-repeat fixed;
-}
-
-._loc {
-    background: url('../img/loc.jpg') center / cover no-repeat fixed;
-}
-
-._spec {
-    background: url('../img/spec.jpg') center / cover no-repeat fixed;
-}
-
-._veh {
-    background: url('../img/veh.jpg') center / cover no-repeat fixed;
+    &__film{
+        background: url('../img/rain.jpg') center / cover no-repeat fixed;
+    }
+    &__people {
+        background: url('../img/people.jpg') center / cover no-repeat fixed;
+    }
+    &__loc {
+        background: url('../img/loc.jpg') center / cover no-repeat fixed;
+    }
+    &__spec {
+        background: url('../img/spec.jpg') center / cover no-repeat fixed;
+    }
+    &__veh {
+        background: url('../img/veh.jpg') center / cover no-repeat fixed;
+    }
 }
 
 .content {
@@ -145,7 +140,7 @@ html, body {
     }
 }
 
-.footer {
+.information-panel {
     background-color: rgb(209, 208, 208);
     color: rgb(117, 116, 116);
     &__container {

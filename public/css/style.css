@@ -19,21 +19,21 @@ html, body {
           flex-direction: column;
 }
 
-._container {
+.container {
   max-width: 1200px;
 }
 
 @media (max-width: 1024px) {
-  ._container {
+  .container {
     max-width: 1024px;
   }
 }
 
-.header {
+.navigation-bar {
   background-color: #221815;
 }
 
-.header__container {
+.navigation-bar__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,23 +123,23 @@ html, body {
   text-align: center;
 }
 
-._film {
+.fullscreen__film {
   background: url("../img/rain.jpg") center/cover no-repeat fixed;
 }
 
-._people {
+.fullscreen__people {
   background: url("../img/people.jpg") center/cover no-repeat fixed;
 }
 
-._loc {
+.fullscreen__loc {
   background: url("../img/loc.jpg") center/cover no-repeat fixed;
 }
 
-._spec {
+.fullscreen__spec {
   background: url("../img/spec.jpg") center/cover no-repeat fixed;
 }
 
-._veh {
+.fullscreen__veh {
   background: url("../img/veh.jpg") center/cover no-repeat fixed;
 }
 
@@ -183,12 +183,12 @@ html, body {
   color: #757474;
 }
 
-.footer {
+.information-panel {
   background-color: #d1d0d0;
   color: #757474;
 }
 
-.footer__container {
+.information-panel__container {
   padding: 15px 15px;
   margin: 0px auto;
 }
