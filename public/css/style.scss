@@ -30,6 +30,7 @@ html, body {
         align-items: center;
         padding: 0px 15px;
         margin: 0px auto;
+        min-height: 6vh;
     }
 }
 
@@ -57,7 +58,7 @@ html, body {
 
 .logo-screen {
     background-color: #109CEB;
-    min-height: 93vh;
+    min-height: 94vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,6 +91,8 @@ html, body {
         font-weight: 700;
         font-size: 150px;
         text-align: center;
+        line-height: 50vh;
+
     }
     &__film{
         background: url('../img/rain.jpg') center / cover no-repeat fixed;
