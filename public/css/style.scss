@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    @media (max-width: 1024px) {
+        max-width: 1024px;
+    }
+}
+
+.navigation-bar {
+    background-color: #221815;
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        padding: 0px 15px;
+        margin: 0px auto;
+        min-height: 6vh;
+    }
+}
+
+.logo {
+    height: 35px;
+    width: auto;
+}
+
+.menu {
+    flex: auto 1;
+    &__list {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+    }
+    &__link {
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        text-decoration: none;
+        margin: 0px 15px;
+    }
+}
+
+.logo-screen {
+    background-color: #109CEB;
+    min-height: 94vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__body {
+        background-image: url(../img/totoro.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100vh;
+        height: 80vh;
+        max-height: 800px;
+        margin: 0px auto;
+        padding: 50px;
+    }
+    &__footer {
+        background-color: #221815;
+    }
+    &__title {
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 20px;
+    }
+}
+
+.fullscreen {
+    min-height: 100vh;
+    h1 {
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 150px;
+        text-align: center;
+        line-height: 50vh;
+
+    }
+    &__film{
+        background: url('../img/rain.jpg') center / cover no-repeat fixed;
+    }
+    &__people {
+        background: url('../img/people.jpg') center / cover no-repeat fixed;
+    }
+    &__loc {
+        background: url('../img/loc.jpg') center / cover no-repeat fixed;
+    }
+    &__spec {
+        background: url('../img/spec.jpg') center / cover no-repeat fixed;
+    }
+    &__veh {
+        background: url('../img/veh.jpg') center / cover no-repeat fixed;
+    }
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+}
+
+.card-list {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        margin: 0px auto;
+    }
+    &__card {
+        margin: 25px auto;
+    }
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    min-width: 100%;
+    &__title {
+        font-weight: 700;
+        padding: 5px;
+        font-size: 24px;
+        border-bottom: 2px solid;
+        border-bottom-color:darkgray;
+    }
+    &__cont{
+        padding: 5px;
+        color: rgb(117, 116, 116);
+    }
+}
+
+.information-panel {
+    background-color: rgb(209, 208, 208);
+    color: rgb(117, 116, 116);
+    &__container {
+        padding: 15px 15px;
+        margin: 0px auto;
+    }
+}

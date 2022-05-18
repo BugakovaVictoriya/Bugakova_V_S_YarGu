@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+.navigation-bar {
+  background-color: #221815;
+}
+
+.navigation-bar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 15px;
+  margin: 0px auto;
+  min-height: 6vh;
+}
+
+.logo {
+  height: 35px;
+  width: auto;
+}
+
+.menu {
+  -webkit-box-flex: 1;
+      -ms-flex: auto 1;
+          flex: auto 1;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu__link {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  text-decoration: none;
+  margin: 0px 15px;
+}
+
+.logo-screen {
+  background-color: #109CEB;
+  min-height: 94vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo-screen__body {
+  background-image: url(../img/totoro.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vh;
+  height: 80vh;
+  max-height: 800px;
+  margin: 0px auto;
+  padding: 50px;
+}
+
+.logo-screen__footer {
+  background-color: #221815;
+}
+
+.logo-screen__title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.fullscreen {
+  min-height: 100vh;
+}
+
+.fullscreen h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 150px;
+  text-align: center;
+  line-height: 50vh;
+}
+
+.fullscreen__film {
+  background: url("../img/rain.jpg") center/cover no-repeat fixed;
+}
+
+.fullscreen__people {
+  background: url("../img/people.jpg") center/cover no-repeat fixed;
+}
+
+.fullscreen__loc {
+  background: url("../img/loc.jpg") center/cover no-repeat fixed;
+}
+
+.fullscreen__spec {
+  background: url("../img/spec.jpg") center/cover no-repeat fixed;
+}
+
+.fullscreen__veh {
+  background: url("../img/veh.jpg") center/cover no-repeat fixed;
+}
+
+.content {
+  background-color: white;
+}
+
+.card-list__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  margin: 0px auto;
+}
+
+.card-list__card {
+  margin: 25px auto;
+}
+
+.card {
+  background-color: white;
+  min-width: 100%;
+}
+
+.card__title {
+  font-weight: 700;
+  padding: 5px;
+  font-size: 24px;
+  border-bottom: 2px solid;
+  border-bottom-color: darkgray;
+}
+
+.card__cont {
+  padding: 5px;
+  color: #757474;
+}
+
+.information-panel {
+  background-color: #d1d0d0;
+  color: #757474;
+}
+
+.information-panel__container {
+  padding: 15px 15px;
+  margin: 0px auto;
+}
+/*# sourceMappingURL=style.css.map */

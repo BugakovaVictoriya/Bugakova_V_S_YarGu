@@ -10,16 +10,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <script src="scripts/scriptsFilm.js" defer type="module"></script>
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <script src="scripts/scriptsSpecies.js" defer type="module"></script>
     <title>Studio Gibli API</title>
   </head>
   <body>
@@ -29,7 +20,7 @@
         <div class="navigation-bar__container container">
           <img class="logo" src="img/logo.svg" alt="">
           <div class="navigation-bar__menu menu">
-            <nav class="menu">
+            <nav class="menu__body">
               <ul class="menu__list">
                 <li><a href="index.html" class="menu__link">Films</a></li>
                 <li><a href="people.html" class="menu__link">People</a></li>
@@ -41,14 +32,8 @@
          </div>
         </div>
       </header>
-      <section class="logo-screen">
-        <div class="logo-screen__body"></div>
-        <div class="logo-screen__footer">
-          <div class="logo-screen__title">Studio Ghibli</div>
-        </div>
-      </section>
-      <section class="fullscreen fullscreen__film">
-        <h1>Films</h1>
+      <section class="fullscreen fullscreen__spec">
+        <h1>Species</h1>
       </section>
       <section class="content">
         <div class="card-list__container _container" id="root">
@@ -61,15 +46,5 @@
         </div>
       </footer>
     </div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
