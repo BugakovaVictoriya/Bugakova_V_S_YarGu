@@ -20,25 +20,13 @@ async function getDataFilm() {
         if (response.status === 200) {
             const data = await response.json();
             data.forEach(data => {
-                let template;
-                switch(namePage) {
-                    case "Films": 
-                        template = makeFilmCard(data);
-                        break;
-                    case "Locations": 
-                        template = makeLocationsCard(data);
-                        break;
-                    case "People": 
-                        template = makePeopleCard(data);
-                        break;
-                    case "Species": 
-                        template = makeSpeciesCard(data);
-                        break;
-                    case "Vehicles": 
-                        template = makeVehiclesCard(data);
-                        break;
-                    }
-
+                let template = {
+                    Films: makeFilmCard(data),
+                    Locations: makeLocationsCard(data),
+                    People: makePeopleCard(data),
+                    Species: makeSpeciesCard(data),
+                    Vehicles: makeVehiclesCard(data)
+                }[namePage];
                 app.insertAdjacentHTML('beforeend', template);
             });
         } else {
@@ -51,3 +39,9 @@ async function getDataFilm() {
 }
 
 getDataFilm();
+
+function handleError(err){
+    const errorMessage = document.createElement('marquee');
+    errorMessage.textContent = `Something went wrong! ${err}`;
+    app.appendChild(errorMessage);
+}

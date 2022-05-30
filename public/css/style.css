@@ -282,4 +282,53 @@ html, body {
 .games-pole__button {
   margin-top: 50px;
 }
+
+.preloader-grand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  -webkit-transform: translateZ(1px);
+          transform: translateZ(1px);
+}
+
+.preloader-grand img {
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  -webkit-animation: spin 8s linear 0s infinite;
+          animation: spin 8s linear 0s infinite;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotateY(1800deg);
+            transform: rotateY(1800deg);
+  }
+  to {
+    -webkit-transform: rotateY(3600deg);
+            transform: rotateY(3600deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotateY(1800deg);
+            transform: rotateY(1800deg);
+  }
+  to {
+    -webkit-transform: rotateY(3600deg);
+            transform: rotateY(3600deg);
+  }
+}
 /*# sourceMappingURL=style.css.map */
